@@ -8,6 +8,12 @@ import Rating from "./components/Rating";
 import DriverCard from "./components/DriverCard";
 import LikeButton from "./components/LikeButton";
 import Dice from "./components/Dice";
+import Carousel from "./components/Carousel";
+import NumbersTable from "./components/NumbersTable";
+import FaceBook from "./components/FaceBook";
+import SignupPage from "./components/SignupPage";
+import RGBColorPicker from "./components/RGBColorPicker";
+import ClickablePicture from "./components/ClickablePicture";
 
 function App() {
   return (
@@ -93,6 +99,25 @@ function App() {
       />
       <LikeButton />
       <Dice />
+      <Carousel
+        images={[
+          "https://randomuser.me/api/portraits/women/1.jpg",
+          "https://randomuser.me/api/portraits/men/1.jpg",
+          "https://randomuser.me/api/portraits/women/2.jpg",
+          "https://randomuser.me/api/portraits/men/2.jpg"
+        ]}
+      />
+      <NumbersTable
+        limit={12}
+      />
+      <FaceBook />
+      <SignupPage />
+      <RGBColorPicker></RGBColorPicker>
+      <ClickablePicture
+        img="src/assets/images/descarga.png"
+        imgClicked="src/assets/images/Diseño sin título.png"
+
+       />
     </div>
   );
 }
